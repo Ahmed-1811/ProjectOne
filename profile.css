@@ -1,0 +1,541 @@
+@import url('https://fonts.googleapis.com/css2?family=Protest+Strike&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap');
+:root {
+    --mainFont: "Protest Strike", sans-serif;
+    --secondaryFont: "PT Sans Narrow", sans-serif;
+    --mainColor: #0F172B;
+    --secondaryColor: #ff1a75;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.allProject {
+    width: 100%;
+    background-color: #0F172B;
+    padding: 0 7%;
+}
+
+.allProject .header {
+    width: 100%;
+    background-color: #0F172B;
+    background-size: 100% 100%;
+    padding: 20px 20px;
+}
+
+.allProject .header .navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.allProject .header .navbar .logo {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 30px;
+}
+
+.allProject .header .navbar .logo i {
+    font-size: 45px;
+}
+
+.allProject .header .navbar .logo h1 {
+    font-size: 40px;
+    font-family: var(--mainFont);
+    margin-left: 15px;
+}
+
+.allProject .header .navbar .research{
+    display: flex;
+    justify-content: space-between;
+}
+.allProject .header .navbar .research input{
+    position: absolute;
+    left: 350px;
+    top: 30px;
+    background: #212c45;
+    border-radius: 20px;
+    width: 180px;
+    height: 30px;
+    border: 1px solid #212c45;
+    color: azure;
+    text-align: center;;
+}
+.allProject .header .navbar .navList button{
+    border: 1px solid #212c45;
+    border-radius: 25px;
+    background: #212c45;
+    display: flex;
+    color: #7c7878;
+}
+.allProject .header .navbar .navList button:hover{
+    background-color: var(--secondaryColor);
+}
+.allProject .header .navbar .navList img{
+    border-radius: 25px;
+
+}
+.allProject .header .navbar .navList {
+    width: 45%;
+}
+.allProject .header .navbar .navList ul {
+    width: 90%;
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    margin-top: 15px;
+    margin-left: 30%;
+}
+.allProject .header .navbar .navList ul li a {
+    text-decoration: none;
+    color: #7c7878;
+    font-size: 18px;
+    font-family: var(--secondaryFont);
+    font-weight: bold;
+    transition: 1s;
+}
+.allProject .header .navbar .navList ul .active a {
+    color: var(--secondaryColor);
+
+}
+.allProject .header .navbar .navList ul li:hover a{
+    color: var(--secondaryColor);
+}
+.allProject .header .navbar .navList ul li:hover a:after {
+    border-top-color: var(--secondaryColor);
+}
+
+.dadbanner{
+    width: 100%;
+    height: 75vh;
+    padding: 15px;
+    background-color: #34394536;
+    border-radius: 20px;
+}
+.dadbanner .banner{
+    width: 100%;
+    height: 95%;
+    background-color: var(--mainColor);
+    border-radius: 20px;
+    margin: 20px;
+    padding: 10px;
+    display: flex;
+}
+.dadbanner .banner .imgbanner{
+    width: 33%;
+    padding: 30px;
+}
+.dadbanner .banner .imgbanner img{
+    border-radius: 20px;
+}
+.dadbanner .banner .pbanner{
+    width: 33%;
+    padding: 30px;
+}
+.dadbanner .banner .pbanner button{
+    padding: 10px;
+    background-color: #ff2d75;
+    color: azure;
+    text-align: center;
+    border: 1px solid var(--secondaryColor);
+    border-radius: 25px;
+    font-size: 17px;
+    margin-top: 50px;
+}
+.dadbanner .banner .pbanner h2{
+    color: azure;
+    font-size: 32px;
+    margin-top: 20px;
+}
+.dadbanner .banner .pbanner p{
+    margin-top: 20px;
+    color: gray;
+}
+.dadbanner .banner .pbanner .bu button{
+    color: var(--secondaryColor);
+    background-color: var(--mainColor);
+}
+.dadbanner .banner .listbanner{
+    width: 33%;
+    padding: 20px;
+    margin-top: 50px;
+}
+.dadbanner .banner .listbanner .dadlist{
+    height: 60%;
+    padding: 30px;
+    margin: 20px;
+    background-color:#5c5a5a5e;
+    border-radius: 20px;
+}
+.dadbanner .banner .listbanner .dadlist .list{
+    display: flex;
+    padding: 15px 0px;
+}
+.dadbanner .banner .listbanner .list .plist{
+    color:azure ;
+}
+.dadbanner .banner .listbanner .list .hlist{
+    color: var(--secondaryColor);
+    text-align: right;
+}
+.dadbanner .banner .listbanner .list hr{
+    font-size: 2px;
+    color: azure;
+}
+
+.banner{
+    width: 95%;
+    height: 60vh;
+    background-color: #34394536;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+}
+.banner .bannerLeft{
+    width: 88.5%;
+    height: 90%;
+    margin: 20px;
+    padding: 70px;
+    background-image:url(banner-bg.jpg);
+}
+.banner .bannerLeft h3{
+    color: azure;
+}
+.banner .bannerLeft p{
+    color: azure;
+    font-size: 50px;
+    text-transform: capitalize;
+}
+.banner .bannerLeft .bank{
+    color: var(--secondaryColor);
+}
+
+.banner .bannerLeft button{
+    width: 200px;
+    padding: 15px;
+    background-color: #ff2d75;
+    color: white;
+    text-align: center;
+    border: 1px solid var(--secondaryColor);
+    border-radius: 25px;
+    font-size: 17px;
+    margin-top: 30px;
+}
+.banner .bannerLeft button:hover{
+    color: var(--secondaryColor);
+    background-color: azure;
+    transition: 1s;
+}
+
+
+
+.reviews p{
+    font-size: 30px;
+}
+.reviews .bank{
+    color: var(--secondaryColor);
+}
+.reviews .blek{
+    color: azure;
+    text-decoration: underline;
+}
+.button{
+    text-align: center;
+}
+.reviews button{
+    width: 200px;
+    padding: 15px;
+    background-color: #ff2d75;
+    color: white;
+    text-align: center;
+    border: 1px solid var(--secondaryColor);
+    border-radius: 25px;
+    font-size: 17px;
+    margin-top: 30px;
+}
+.reviews button:hover{
+    color: var(--secondaryColor);
+    background-color: azure;
+    transition: 1s;
+}
+.reviews{
+    width: 95%;
+    background-color: #34394536;
+    padding: 15px;
+}
+.reviews .cart {
+    width: 95%;
+    height: 90%;
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    gap: 10px;
+    padding: 15px;
+}
+.reviews .cart .popular{
+    padding:20px ;
+    background-color: var(--mainColor);
+    border-radius:15px;
+    border: 1px solid var(--mainColor);
+}
+.reviews .cart .popular video{
+    display: flex;
+    border-radius: 15px;
+    width: 90%;
+    height: 90%;
+}
+.reviews .cart .popular .stert{
+    color: azure;
+    padding-top: 10px;
+    color: var(--secondaryColor);
+    display: flex;
+}
+.reviews .cart .popular .stert p{
+    font-size: 20px;
+}
+.reviews .cart .popular .stert i{
+    font-size: 15px;
+}
+.game p{
+    font-size: 30px;
+    margin: 25px;
+}
+.game .bank{
+    color: var(--secondaryColor);
+}
+.game .blek{
+    color: azure;
+    text-decoration: underline;
+}
+.button{
+    text-align: center;
+}
+.game .button button{
+    width: 200px;
+    padding: 15px;
+    background-color: #ff2d75;
+    color: white;
+    text-align: center;
+    border: 1px solid var(--secondaryColor);
+    border-radius: 25px;
+    font-size: 17px;
+    margin-top: 30px;
+}
+.game button:hover{
+    color: var(--secondaryColor);
+    background-color: azure;
+    transition: 1s;
+}
+.game{
+    width: 95%;
+    height: 70vh;
+    background-color: #34394536;
+    padding: 15px;
+}
+.game .table{
+    margin: 25px;
+}
+.game .table table,tr{
+    width: 100%;
+    height: 90%;
+    text-align: center;
+}
+.game .table img{
+    border-radius:20px ;
+}
+.game .table h3{
+    color: azure;
+}
+.game .table h6{
+    color: gray;
+}
+.game .table button{
+    background-color: var(--mainColor);
+    color: gray;
+    width: 200px;
+    padding: 15px;
+    text-align: center;
+    border: 1px solid gray;
+    border-radius: 25px;
+}
+.footer {
+    margin-top: 30px;
+    text-align: center;
+    color: gray;
+}
+.footer a{
+    text-decoration: none;
+    color: gray;
+}
+.footer a:hover{
+    color: var(--secondaryColor);
+    transition: 1.5s;
+}
+
+
+.allProject .header .navbar label i {
+    color: azure;
+    font-size: 30px;
+}
+.allProject .header .navbar label  {
+    top: 20px;
+    right: 30px;
+    border: 4px solid azure;
+    position: absolute;
+    padding: 5px;
+    box-shadow: 3px 3px  5px var(--secondaryColor);
+    border-radius: 12px;
+    display: none;
+}
+.allProject .header .navbar input{
+    display: none;
+}
+
+
+@media screen and (max-width: 850px){
+    .allProject .header .navbar .research{
+        display:none ;
+    }
+    .allProject .header .navbar  {
+        flex-direction: column;
+        width: 100%;
+    }
+    .allProject .header .navbar .navList {
+        width: 100%;
+        margin-top: 52px;
+        margin-left: -35%;
+    }
+    .allProject .header .navbar .navList ul {
+        flex-direction: column;
+        background-color:#1606164a;
+        text-align: start;
+        box-shadow: 3px 3px  5px var(--secondaryColor);
+        border-radius: 20px;
+        padding:20px ;
+        transform:rotateX(90deg);
+        transition: 1s;
+        transform-origin:left;
+    }
+    .allProject .header .navbar .navList ul li {
+        padding:6px ;
+    }
+    .allProject .header .navbar label{
+        display: block;
+    }
+    .allProject .header .navbar input:checked ~ .navList ul{
+        transform:rotateX(0deg);
+    }
+    .game .table img{
+        display: none;
+    }
+    .game .table button{
+        width: 150px;
+        }
+    .game .table .anomaly{
+        width: 100px;
+    }
+    .reviews{
+        height: 100%;
+        text-align: center;
+    }
+    .reviews .cart {
+        grid-template-columns: repeat(2, auto);
+        justify-content: center;
+    }
+    .dadbanner{
+        height: 100%;
+    }
+    .dadbanner .banner{
+        width: 95%;
+        height: 95%;
+        margin: 0px;
+        display: flex;
+        flex-direction:column;
+        text-align: center;
+    }
+
+    .dadbanner .banner .imgbanner{
+        display: none;
+    }
+    
+    .dadbanner .banner .pbanner{
+        width: 100%;
+        margin-left: 25%;
+    }
+    .dadbanner .banner .listbanner .dadlist{
+        width: 200%;
+        margin-left: 25%;
+    }
+}
+
+@media screen and (max-width: 1400px){
+    .dadbanner{
+        height: 100%;
+    }
+    .dadbanner .banner{
+        width: 95%;
+        height: 95%;
+        margin: 0px;
+        display: flex;
+    }
+
+    .dadbanner .banner .imgbanner{
+        display: none;
+    }
+    .dadbanner .banner .pbanner{
+        width: 45%;
+    }
+    .dadbanner .banner .listbanner{
+        width: 45%;
+    }
+    .dadbanner .banner .listbanner .dadlist{
+        height: 100%;
+    }
+}
+@media screen and (max-width: 620px){
+
+    .game .table img{
+        display: none;
+    }
+    .game .table button{
+        width: 100px;
+        }
+    .game .table .anomaly{
+        width: 100px;
+    }
+    .game .table {
+        margin: 0px;
+    }
+    .game .table h3{
+        font-size: 12px;
+    }
+}
+@media screen and (max-width: 550px){
+    .reviews .cart {
+        grid-template-columns: repeat(1, auto);
+        justify-content: center;
+    }
+    .game .table h3{
+        font-size: 10px;
+    }
+    .banner .bannerLeft p {
+        font-size: 20px;
+    }
+    .banner .bannerLeft button {
+        margin-left: -40px;
+    }
+    .game .table button{
+        width: 70px;
+        font-size: 10px;
+        padding: 10px;
+
+    }
+    .game .table .anomaly{
+        width: 70px;
+        font-size: 10px;
+        padding: 10px;
+    }
+}

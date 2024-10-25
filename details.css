@@ -1,0 +1,488 @@
+@import url('https://fonts.googleapis.com/css2?family=Protest+Strike&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap');
+:root {
+    --mainFont: "Protest Strike", sans-serif;
+    --secondaryFont: "PT Sans Narrow", sans-serif;
+    --mainColor: #0F172B;
+    --secondaryColor: #ff1a75;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.allProject {
+    width: 100%;
+    background-color: #0F172B;
+    padding: 0 7%;
+}
+
+.allProject .header {
+    width: 100%;
+    background-color: #0F172B;
+    background-size: 100% 100%;
+    padding: 20px 20px;
+}
+
+.allProject .header .navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.allProject .header .navbar .logo {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 30px;
+}
+
+.allProject .header .navbar .logo i {
+    font-size: 45px;
+}
+
+.allProject .header .navbar .logo h1 {
+    font-size: 40px;
+    font-family: var(--mainFont);
+    margin-left: 15px;
+}
+
+.allProject .header .navbar .research{
+    display: flex;
+    justify-content: space-between;
+}
+.allProject .header .navbar .research input{
+    position: absolute;
+    left: 350px;
+    top: 30px;
+    background: #212c45;
+    border-radius: 20px;
+    width: 180px;
+    height: 30px;
+    border: 1px solid #212c45;
+    color: azure;
+    text-align: center;;
+}
+.allProject .header .navbar .navList button{
+    border: 1px solid #212c45;
+    border-radius: 25px;
+    background: #212c45;
+    display: flex;
+    color: #7c7878;
+}
+.allProject .header .navbar .navList button:hover{
+    background-color: var(--secondaryColor);
+}
+.allProject .header .navbar .navList img{
+    border-radius: 25px;
+
+}
+.allProject .header .navbar .navList {
+    width: 45%;
+}
+
+.allProject .header .navbar .navList ul {
+    width: 90%;
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    margin-top: 15px;
+    margin-left: 30%;
+}
+
+.allProject .header .navbar .navList ul li a {
+    text-decoration: none;
+    color: #7c7878;
+    font-size: 18px;
+    font-family: var(--secondaryFont);
+    font-weight: bold;
+    transition: 1s;
+}
+.allProject .header .navbar .navList ul .active a {
+    color: var(--secondaryColor);
+
+}
+
+.allProject .header .navbar .navList ul li:hover a{
+    color: var(--secondaryColor);
+}
+
+.allProject .header .navbar .navList ul li:hover a:after {
+    border-top-color: var(--secondaryColor);
+}
+
+.dadbanner{
+    width: 100%;
+    background-color: #34394536;
+    text-align: center;
+    padding: 40px;
+}
+.dadbanner .banner{
+    width: 100%;
+    height: 90%;
+    display: flex;
+    border-radius: 20px;
+}
+.banner .imgleft{
+    width: 30%;
+    padding: 30px;
+}
+.banner .imgleft img{
+    border-radius: 20px;
+}
+.banner .imgright{
+    width: 70%;
+    padding: 80px 0px;
+}
+.banner .imgright video{
+    width: 90%;
+    height: 70%;
+    border-radius: 20px;
+}
+.dadbanner  p{
+    color: azure;
+    text-transform: capitalize;
+    font-size: 60px;
+    font-weight: bold;
+}
+
+.daddetails{
+    width: 100%;
+    height: 100vh;
+    background-color: #34394536;
+    padding: 60px;
+}
+.daddetails .details{
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.415);
+    border-radius: 20px;
+    padding: 30px;
+}
+.daddetails .details .listdetails{
+    width: 98%;
+    height: 20%;
+    display:flex;
+}
+.daddetails .details .listdetails .listone {
+    width: 50%;
+    border-radius: 20px;
+    padding: 20px;
+    background-color:rgba(80, 80, 80, 0.159);
+}
+.daddetails .details .listdetails .listone .stert{
+    color: azure;
+    padding-top: 10px;
+    word-spacing: 400px;
+}
+.daddetails .details .listdetails .listone .stert h4{
+    display: inline;
+    
+}
+.daddetails .details .listdetails .listone .stert p{
+    display: inline;
+    font-size: 20px;
+}
+.daddetails .details .listdetails .listone .stert i{
+    color: gold;
+}
+.daddetails .details .listdetails .listone .download{
+    color: azure;
+    padding-top: 10px;
+    word-spacing: 400px;
+}
+.daddetails .details .listdetails .listone .download h6{
+    display: inline;
+    color: gray;
+    font-size: 12px;
+}
+.daddetails .details .listdetails .listone .download p{
+    display: inline;
+    font-size: 20px;
+}
+.daddetails .details .listdetails .listone .download i{
+    color: var(--secondaryColor);
+}
+.daddetails .details .listdetails .listtow{
+    width: 50%;
+    border-radius: 20px;
+    padding: 20px;
+    background-color:rgba(80, 80, 80, 0.159);
+}
+.daddetails .details .listdetails .listtow .i{
+    font-size: 20px;
+    word-spacing: 100px;
+}
+.daddetails .details .listdetails .listtow .i i{
+    color: var(--secondaryColor);
+}
+.daddetails .details .listdetails .listtow .i .istart i{
+    color: gold;
+}
+
+.daddetails .details .listdetails .listtow .p{
+    display: flex;
+    padding-top: 20px;
+    word-spacing: 100px;
+}
+.daddetails .details .listdetails .listtow .p p{
+    font-size: 20px;
+    color: azure;
+}
+.daddetails .details .imgdetails {
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    padding-top: 50px;
+}
+.daddetails .details .imgdetails img{
+    border-radius: 20px;
+}
+.daddetails .details .pdetails{
+    padding-top: 20px;
+}
+.daddetails .details .pdetails p{
+    color: gray;
+    font-size: 18px;
+}
+.daddetails .details .pdetails .pspan {
+    color: azure;
+    
+}
+.daddetails .details .butdetails{
+    text-align: center;
+    padding-top:20px;
+}
+.daddetails .details .butdetails button{
+    width: 100%;
+    padding: 12px 0px ;
+    border: 1px solid var(--secondaryColor);
+    border-radius: 20px;
+    font-size: 20px;
+    color: var(--secondaryColor);
+    background-color: var(--mainColor);
+}
+.daddetails .details .butdetails button:hover{
+    transition: 1.5s;
+    background-color: azure;
+}
+
+
+.dadgame{
+    width: 100%;
+    height: 80vh;
+    background-color: #34394536;
+    padding: 60px;
+}
+.dadgame .parsogame{
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.379);
+    border-radius: 20px;
+    padding: 30px;
+}
+.dadgame .parsogame  p{
+    font-size: 30px;
+    margin: 25px;
+}
+.dadgame .parsogame  .bank{
+    color: var(--secondaryColor);
+}
+.dadgame .parsogame  .blek{
+    color: azure;
+    text-decoration: underline;
+}
+.dadgame .parsogame .gsme .game2{
+    display: grid;
+    grid-template-columns: repeat(4,auto);
+    grid-template-rows: repeat(3,auto);
+}
+.dadgame .parsogame .gsme .game2 .imggame2 {
+   display: inline;
+}
+.dadgame .parsogame .gsme .game2 .stert{
+    color: azure;
+    padding-top: 10px;
+}
+.dadgame .parsogame .gsme .game2 .stert h4{
+    display: inline;
+}
+.dadgame .parsogame .gsme .game2 .stert p{
+    display: inline;
+    font-size: 20px;
+}
+.dadgame .parsogame .gsme .game2 .stert i{
+    color: gold;
+}
+.dadgame .parsogame .gsme .game2 .download{
+    color: azure;
+    padding-top: 10px;
+}
+.dadgame .parsogame .gsme .game2 .download h6{
+    display: inline;
+    color: gray;
+}
+.dadgame .parsogame .gsme .game2 .download p{
+    display: inline;
+    font-size: 20px;
+}
+.dadgame .parsogame .gsme .game2 .download i{
+    color: var(--secondaryColor);
+}
+
+
+.footer {
+    margin-top: 15px;
+    padding: 10px;
+    text-align: center;
+    color: gray;
+}
+.footer a{
+    text-decoration: none;
+    color: gray;
+}
+.footer a:hover{
+    color: var(--secondaryColor);
+    transition: 1.5s;
+}
+
+
+.allProject .header .navbar label i {
+    color: azure;
+    font-size: 30px;
+}
+.allProject .header .navbar label  {
+    top: 20px;
+    right: 30px;
+    border: 4px solid azure;
+    position: absolute;
+    padding: 5px;
+    box-shadow: 3px 3px  5px var(--secondaryColor);
+    border-radius: 12px;
+    display: none;
+}
+.allProject .header .navbar input{
+    display: none;
+}
+
+
+
+@media screen and (max-width: 850px){
+    .allProject .header .navbar .research{
+        display:none ;
+    }
+    .allProject .header .navbar  {
+        flex-direction: column;
+        width: 100%;
+    }
+    .allProject .header .navbar .navList {
+        width: 100%;
+        margin-top: 52px;
+        margin-left: -35%;
+    }
+    .allProject .header .navbar .navList ul {
+        flex-direction: column;
+        background-color:#1606164a;
+        text-align: start;
+        box-shadow: 3px 3px  5px var(--secondaryColor);
+        border-radius: 20px;
+        padding:20px ;
+        transform:rotateX(90deg);
+        transition: 1s;
+        transform-origin:left;
+    }
+    .allProject .header .navbar .navList ul li {
+        padding:6px ;
+    }
+    .allProject .header .navbar label{
+        display: block;
+    }
+    .allProject .header .navbar input:checked ~ .navList ul{
+        transform:rotateX(0deg);
+    }
+    .daddetails .details .listdetails .listone {
+        display: flex;
+        text-align: center;
+        padding: 40px;
+    }
+    .daddetails .details .listdetails .listtow {
+        display: none;
+    }
+    .daddetails .details .imgdetails {
+        margin-top:-50px ;
+    }
+    .daddetails .details .imgdetails img {
+        width: 90%;
+    }
+    .daddetails .details .pdetails p {
+        font-size: 15px;
+    }
+    .dadgame{
+        width: 100%;
+        height: 100%;
+        background-color: #34394536;
+        padding: 60px;
+    }
+    .dadgame .parsogame .gsme .game2{
+        display: grid;
+        grid-template-columns: repeat(2,auto);
+        grid-template-rows: repeat(6,auto);
+    }
+    .banner .imgleft img {
+        border-radius: 20px;
+        width: 90%;
+    }
+}
+
+
+@media screen and (max-width: 1515px){
+    .dadbanner .banner{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        border-radius: 20px;
+    }
+    .banner .imgleft{
+        width: 100%;
+    }
+    .banner .imgright{
+        width: 100%;
+    }
+    .daddetails{
+        width: 100%;
+        height: 100%;
+        background-color: #34394536;
+        padding: 60px;
+    }
+    .daddetails .details{
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.415);
+        border-radius: 20px;
+        padding: 30px;
+    }
+    .daddetails .details .listdetails{
+        width: 98%;
+        height: 20%;
+        display:flex;
+        flex-direction: column;
+        text-align: center;
+        
+    }
+    .daddetails .details .listdetails .listone {
+        width: 100%;
+    }
+    .daddetails .details .listdetails .listtow{
+        width: 100%;
+        margin-top: 20px;
+    }
+    .daddetails .details .listdetails .listtow .p {
+        display: flex;
+        justify-content: center;
+    }
+    .daddetails .details .imgdetails {
+        display: grid;
+        grid-template-columns: repeat(1,auto);
+        padding-top: 50px;
+        text-align: center;
+    }
+}

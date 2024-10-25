@@ -1,0 +1,645 @@
+@import url('https://fonts.googleapis.com/css2?family=Protest+Strike&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap');
+:root {
+    --mainFont: "Protest Strike", sans-serif;
+    --secondaryFont: "PT Sans Narrow", sans-serif;
+    --mainColor: #0F172B;
+    --secondaryColor: #ff1a75;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.allProject {
+    width: 100%;
+    background-color: #0F172B;
+    padding: 0 7%;
+}
+
+.allProject .header {
+    width: 100%;
+    background-color: #0F172B;
+    background-size: 100% 100%;
+    padding: 20px 20px;
+}
+
+.allProject .header .navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.allProject .header .navbar .logo {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 30px;
+}
+
+.allProject .header .navbar .logo i {
+    font-size: 45px;
+}
+
+.allProject .header .navbar .logo h1 {
+    font-size: 40px;
+    font-family: var(--mainFont);
+    margin-left: 15px;
+}
+
+.allProject .header .navbar .research{
+    display: flex;
+    justify-content: space-between;
+}
+.allProject .header .navbar .research input{
+    position: absolute;
+    left: 350px;
+    top: 30px;
+    background: #212c45;
+    border-radius: 20px;
+    width: 180px;
+    height: 30px;
+    border: 1px solid #212c45;
+    color: azure;
+    text-align: center;
+}
+.allProject .header .navbar .navList button{
+    border: 1px solid #212c45;
+    border-radius: 25px;
+    background: #212c45;
+    display: flex;
+    color: #7c7878;
+}
+.allProject .header .navbar .navList button:hover{
+    background-color: var(--secondaryColor);
+}
+.allProject .header .navbar .navList img{
+    border-radius: 25px;
+
+}
+.allProject .header .navbar .navList {
+    width: 45%;
+}
+
+.allProject .header .navbar .navList ul {
+    width: 90%;
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    margin-top: 15px;
+    margin-left: 30%;
+}
+
+.allProject .header .navbar .navList ul li a {
+    text-decoration: none;
+    color: #7c7878;
+    font-size: 18px;
+    font-family: var(--secondaryFont);
+    font-weight: bold;
+    transition: 1s;
+}
+.allProject .header .navbar .navList ul .active a {
+    color: var(--secondaryColor);
+
+}
+
+.allProject .header .navbar .navList ul li:hover a{
+    color: var(--secondaryColor);
+}
+
+.allProject .header .navbar .navList ul li:hover a:after {
+    border-top-color: var(--secondaryColor);
+}
+
+
+
+.banner{
+    width: 100%;
+    height: 90vh;
+    background-color: #34394536;
+    padding: 15px;
+    display: flex;
+    border-radius: 20px;
+}
+.banner .partone{
+    width: 70%;
+    height: 95%;
+    background-color: var(--mainColor);
+    border-radius: 20px;
+    margin: 20px;
+    padding: 10px;
+}
+.banner .partone p{
+    font-size: 30px;
+    margin: 25px;
+}
+.banner .partone .bank{
+    color: var(--secondaryColor);
+}
+.banner .partone .blek{
+    color: azure;
+    text-decoration: underline;
+}
+.banner .partone .clip{
+    width: 100%;
+}
+.banner .partone .dadclip{
+    width: 100%;
+    height: 100%;
+    margin: 40px;
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+}
+
+.image-container {
+    position: relative;
+    height: 90%;
+}
+ .banner .partone .dadclip .clip .image-container img{
+    display: flex;
+    width: 85%;
+    height: 75%;
+    border-radius: 15px;
+} 
+.button {
+    display: none;
+    position: absolute;
+    top: 70%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(21, 20, 20, 0.692);
+    color: var(--secondaryColor);
+    padding: 15px;
+    text-align: center;
+    border: 1px solid rgba(21, 20, 20, 0.692);
+    border-radius: 25px;
+    text-decoration: none;
+}
+.image-container:hover .button {
+    display: block;
+}
+.banner .partone .dadclip .clip .stert{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: -150px;
+}
+.banner .partone .dadclip .clip .stert h4{
+    color: azure;
+}
+.banner .partone .dadclip .clip .stert p{
+    font-size: 20px;
+    color: azure;
+}
+.banner .partone .dadclip .clip .stert i{
+    color: gold;
+}
+.banner .partone .dadclip .clip .download{
+    color: azure;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: -40px;
+}
+.banner .partone .dadclip .clip .download h6{
+    color: gray;
+}
+.banner .partone .dadclip .clip .download p{
+    font-size: 20px;
+}
+.banner .partone .dadclip .clip .download i{
+    color: var(--secondaryColor);
+}
+.banner .daddetails {
+    width: 30%;
+    height: 95%;
+    background-color: var(--mainColor);
+    border-radius: 20px;
+    margin: 20px;
+    padding: 10px;
+}
+
+.banner .daddetails p{
+    font-size: 30px;
+    margin: 25px;
+}
+.banner .daddetails .bank{
+    color: var(--secondaryColor);
+}
+.banner .daddetails .blek{
+    color: azure;
+    text-decoration: underline;
+}
+.banner .daddetails .details{
+    display: inline-block;
+}
+.banner .daddetails .details .table{
+    width: 100%;
+    height: 90%;
+}
+.banner .daddetails .details .table img{
+    border-radius: 20px;
+}
+
+.banner .daddetails .details .table h3{
+    color: azure;
+}
+.banner .daddetails .details .table h6{
+    color: gray;
+}
+.banner .daddetails .details .table p{
+    font-size: 20px;
+    color:azure ; 
+}
+.banner .daddetails .details .table .stert i{
+    font-size: 20px;
+    color: gold;
+}
+.banner .daddetails .details .table .bank i {
+    font-size: 20px;
+    color: var(--secondaryColor);
+}
+.banner .daddetails .details .table button {
+    width: 50px;
+    height: 50px;
+    background-color: #37363670;
+    border: 1px solid #37363670;
+    border-radius: 50%;
+}
+.banner .daddetails .details .table button i{
+    color: var(--secondaryColor);
+}
+.banner .daddetails .details .paragraph p{
+    color: var(--secondaryColor);
+    font-size: 18px;
+    text-align: center;
+}
+
+
+.dadlist{
+    width: 100%;
+    height: 75vh;
+    background-color: #34394536;
+    padding: 15px;
+    border-radius: 20px; 
+}
+.dadlist  p{
+    font-size: 30px;
+    margin: 25px;
+    text-align: center;
+}
+.dadlist  .bank{
+    color: var(--secondaryColor);
+}
+.dadlist .blek{
+    color: azure;
+    text-decoration: underline;
+}
+.dadlist .list{
+    width: 90%;
+    display: grid;
+    grid-template-columns:repeat(3,auto) ;
+    justify-content: center;
+    margin: 40px;
+    padding: 10px;
+}
+.dadlist .list .service{
+    margin-left:20px ;
+    border:1px solid gray ;
+    border-radius: 20px;
+}
+.dadlist .list .service img{
+    border-radius:50%;
+    padding: 20px;
+}
+.dadlist .list .service h2{
+    color: azure;
+    padding: 0px 0px 0px 40px;
+}
+.dadlist .list .service p{
+    font-size: 15px;
+    color: gray;
+}
+.dadlist .but{
+       width: 100%;
+    text-align: center;
+}
+.dadlist button{
+    width: 200px;
+    padding: 15px;
+    background-color: #ff2d75;
+    color: white;
+    border: 1px solid var(--secondaryColor);
+    border-radius: 25px;
+    font-size: 17px;
+}
+.dadlist button:hover{
+    color: var(--secondaryColor);
+    background-color: azure;
+    transition: 1.5s;
+}
+
+/* =================================================== */
+.parents{
+    width: 100%;
+    height: 90vh;
+    background-color: #34394536;
+    padding: 15px;
+    border-radius: 20px; 
+}
+.parents  p{
+    font-size: 30px;
+    margin: 25px;
+}
+.parents  .bank{
+    color: var(--secondaryColor);
+}
+.parents .blek{
+    color: azure;
+    text-decoration: underline;
+}
+.parents .dadstream{
+    display: flex; 
+}
+.parents .dadstream .stream{
+    width: 90%;
+    display: grid;
+    grid-template-columns:repeat(4,auto);
+    margin: 30px;
+    padding: 10px;
+}
+
+.parents .dadstream .stream img{
+    border-radius: 20px;
+}
+.image-container {
+    position: relative;
+}
+.button-group {
+    display: none;
+}
+.button1 {
+    position: absolute;
+    top: 7%;
+    left: 75%;
+    background-color: #ff66a3b7;
+    color: white;
+    padding: 10px 20px;
+    margin: 5px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 10px;
+    border-radius: 5px;
+    transform: translate(-50%, -50%);
+    display: block;
+}
+.button2 {
+    position: absolute;
+    top: 65%;
+    left: 30%;
+    background-color: #ff66a3b7;
+    color: white;
+    padding: 10px 20px;
+    margin: 5px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 10px;
+    border-radius: 5px;
+    transform: translate(-50%, -50%);
+    display: block;
+}
+.button3 {
+    position: absolute;
+    top: 65%;
+    left: 60%;
+    background-color: #ff66a3b7;
+    color: white;
+    padding: 10px 20px;
+    margin: 5px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 10px;
+    border-radius: 5px;
+    transform: translate(-50%, -50%);
+    display: block;
+}
+.image-container:hover .button-group {
+    display: block;
+}
+
+.parents .dadstream .stream .avatar{
+    display: flex;
+}
+.parents .dadstream .stream .avatar .avatarimg img{
+    margin: 10px;
+}
+.parents .dadstream .stream .avatar .avatarph{
+    padding: 10px;
+}
+.parents .dadstream .stream .avatar .avatarph h5{
+    font-size: 15px;
+    color: var(--secondaryColor);
+}
+.parents .dadstream .stream .avatar .avatarph  i{
+    color: var(--secondaryColor);
+    font-size: 15px;
+    padding: 5px;
+}
+.parents .dadstream .stream .avatar .avatarph h1{
+    color: azure;
+    font-size: 20px;
+}
+.parents .but{
+    width: 100%;
+ text-align: center;
+}
+.parents button{
+ width: 200px;
+ padding: 15px;
+ background-color: #ff2d75;
+ color: white;
+ border: 1px solid var(--secondaryColor);
+ border-radius: 25px;
+ font-size: 17px;
+ margin-top: 15px;
+}
+.parents button:hover{
+ color: var(--secondaryColor);
+ background-color: azure;
+ transition: 1.5s;
+}
+.footer {
+    margin-top: 15px;
+    padding: 10px;
+    text-align: center;
+    color: gray;
+}
+.footer a{
+    text-decoration: none;
+    color: gray;
+}
+.footer a:hover{
+    color: var(--secondaryColor);
+    transition: 1.5s;
+}
+
+
+
+
+.allProject .header .navbar label i {
+    color: azure;
+    font-size: 30px;
+}
+.allProject .header .navbar label  {
+    top: 20px;
+    right: 30px;
+    border: 4px solid azure;
+    position: absolute;
+    padding: 5px;
+    box-shadow: 3px 3px  5px var(--secondaryColor);
+    border-radius: 12px;
+    display: none;
+}
+.allProject .header .navbar input{
+    display: none;
+}
+
+
+
+
+
+@media screen and (max-width: 850px){
+    .allProject .header .navbar .research{
+        display:none ;
+    }
+    .allProject .header .navbar  {
+        flex-direction: column;
+        width: 100%;
+    }
+    .allProject .header .navbar .navList {
+        width: 100%;
+        margin-top: 52px;
+        margin-left: -35%;
+    }
+    .allProject .header .navbar .navList ul {
+        flex-direction: column;
+        background-color:#1606164a;
+        text-align: start;
+        box-shadow: 3px 3px  5px var(--secondaryColor);
+        border-radius: 20px;
+        padding:20px ;
+        transform:rotateX(90deg);
+        transition: 1s;
+        transform-origin:left;
+    }
+    .allProject .header .navbar .navList ul li {
+        padding:6px ;
+    }
+    .allProject .header .navbar label{
+        display: block;
+    }
+    .allProject .header .navbar input:checked ~ .navList ul{
+        transform:rotateX(0deg);
+    }
+}
+
+@media screen and (max-width: 1300px){
+    .parents .dadstream{
+        display: grid;
+        grid-template-columns:repeat(2,auto);
+        grid-template-rows:repeat(2,auto);
+    }
+    .parents{
+        height: 150vh;
+        text-align: center;
+        margin-top: 100px;
+    }
+    .banner{
+        height: 200vh;        
+        display: flex;
+        flex-direction: column;
+    }
+    .banner .partone{
+        width: 100%;
+    }
+    .banner .daddetails{
+        width: 100%;
+        text-align: center;
+    }
+}
+@media screen and (max-width: 1300px){
+    .parents .dadstream{
+        display: grid;
+        grid-template-columns:repeat(2,auto);
+        grid-template-rows:repeat(2,auto);
+    }
+    .parents{
+        height: 150vh;
+        text-align: center;
+        margin-top: 100px;
+    }
+    .banner{
+        height: 200vh;        
+        display: flex;
+        flex-direction: column;
+    }
+    .banner .partone{
+        width: 100%;
+    }
+    .banner .daddetails{
+        width: 100%;
+        text-align: center;
+    }
+}
+@media screen and (max-width: 700px){
+    .parents .dadstream{
+        display: flex;
+        flex-direction: column;
+        margin-left: 80px;
+    }
+    .parents{
+        height: 270vh;
+        text-align: center;
+        margin-top: 150px;
+    }
+    .dadlist .list{
+        display: grid;
+        grid-template-columns:repeat(1,auto) ;
+        justify-content: center;
+        gap: 20px;
+    }
+    .dadlist{
+        height: 140vh;
+    }
+    .banner{
+        height: 300vh;        
+    }
+    .banner .partone {
+        text-align: center;
+    }
+    .banner .partone .dadclip{
+        display: grid;
+        grid-template-columns: repeat(1,auto);
+        text-align: center;
+    }
+    .banner .partone .dadclip .clip {
+        flex-direction: column;
+    }
+    .banner .partone .dadclip .clip .stert {
+        margin-top: -90px;
+    }
+}
+
+@media screen and (max-width: 700px){
+    .parents .dadstream{
+        margin-left: 16px;
+    }
+    .parents {
+        height: 280vh;
+        margin-top: 200px;
+    }
+}
